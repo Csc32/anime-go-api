@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
-import "rsc.io/quote"
+import (
+	"anime-go-api/greetings"
+	"fmt"
+)
 
 func main() {
-	fmt.Println(quote.Go())
+	message := greetings.Hello("Gladys")
+	fmt.Println(message)
 }
